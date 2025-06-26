@@ -1,0 +1,69 @@
+Clear
+
+New object=circuit.ieee123sec
+~ basekv=4.16 Bus1=150 pu=1.00 R1=0 X1=0.0001 R0=0 X0=0.0001
+
+new transformer.reg1a phases=3 windings=2 buses=[150 150r] conns=[wye wye] kvs=[4.16 4.16] kvas=[5000 5000] XHL=.001 %LoadLoss=0.00001 ppm=0.0
+new regcontrol.creg1a transformer=reg1a winding=2 vreg=120 band=2 ptratio=20 ctprim=700 R=3 X=7.5
+
+Redirect IEEELineCodes.dss
+Redirect line.dss
+Redirect switch.dss
+
+open line.sw7
+open line.sw8
+
+!REGULATORS - REDIRECT TO DEFINITIONS FILE
+! This file contains definitions for the remainder of regulators on the feeder:
+Redirect IEEE123Regulators.dss
+
+! ......................Use 1 or 2............................................
+
+
+! 1. Primary loads and PVs. No secondary model
+
+redirect IEEE123Loads.dss
+redirect pv_with_loads.dss
+
+!.................................................................................
+
+
+! 2. Primary and Secondary Mix. Secondary model incuded
+!redirect SecondaryLoads.dss
+!redirect Triplex_Lines.dss
+!redirect Loads_Xfmrs.dss
+
+!redirect pvresidential.dss
+!redirect pvsystems_high_pvs.dss
+!redirect IEEE123CommLoads
+!redirect battresidential.dss
+!.................................................................................
+
+
+Set VoltageBases = [4.16 0.48 0.208]    ! ARRAY OF VOLTAGES IN KV
+CalcVoltageBases  ! PERFORMS ZERO LOAD POWER FLOW TO ESTIMATE VOLTAGE BASES
+
+Set MaxControlIter=30
+
+New EnergyMeter.Feeder Line.L115 1
+!set loadmult=0.3
+
+
+set controlmode=off
+
+!solve
+!Buscoords BusCoor.dss   ! load in bus coordinates
+
+!set MarkPVSystems=true PVMarkerCode=10
+!set Markswitches=true SwitchMarkerCode=8
+!set MarkRegulators=true RegMarkerCode=14
+!set MarkCapacitors=true CapMarkerCode=38
+
+!plot circuit
+
+!Plot daisy Power Max=3000 dots=n labels=n 1ph=3
+
+!export cim100 file=check.xml sub=IEEE123 subgeo=Medium geo=IEEE fid=59AD8E07-3BF9-A4E2-CB8F-C3722F837B62 sid=FE44B314-385E-C2BF-3983-3A10C6060022 sgrid=1CD7D2EE-3C91-3248-5662-A43EFEFAC224 rgnid=73C512BD-7249-4F50-50DA-D93849B89C43
+!export uuids ieee123sec_uuids.dat
+
+

@@ -1,0 +1,21 @@
+! spot loads
+New Load.S860a      Bus1=860.1	Phases=1 Conn=Wye   Model=1 kV=14.376 kW=60.0 kVAR=48.0
+New Load.S860b      Bus1=860.2	Phases=1 Conn=Wye   Model=1 kV=14.376 kW=60.0 kVAR=48.0
+New Load.S860c      Bus1=860.3	Phases=1 Conn=Wye   Model=1 kV=14.376 kW=60.0 kVAR=48.0
+
+
+New Load.S840a       Bus1=840.1	Phases=1 Conn=Wye   Model=1 kV=14.376 kW=27.0 kVAR=21.0
+New Load.S840b       Bus1=840.2	Phases=1 Conn=Wye   Model=1 kV=14.376 kW=27.0 kVAR=21.0
+New Load.S840c       Bus1=840.3 Phases=1 Conn=Wye   Model=1 kV=14.376 kW=27.0 kVAR=21.0
+
+New Load.S844a       Bus1=844.1	Phases=1 Conn=Wye   Model=1 kV=14.376 kW=405.0 kVAR=315.0
+New Load.S844b       Bus1=844.2	Phases=1 Conn=Wye   Model=1 kV=14.376 kW=405.0 kVAR=315.0
+New Load.S844c       Bus1=844.3	Phases=1 Conn=Wye   Model=1 kV=14.376 kW=405.0 kVAR=315.0
+
+New Load.S848a       Bus1=848.1	Phases=1 Conn=Wye Model=1 kV=14.376 kW=60.0 kVAR=48.0
+New Load.S848b       Bus1=848.2	Phases=1 Conn=Wye Model=1 kV=14.376 kW=60.0 kVAR=48.0
+New Load.S848c       Bus1=848.3	Phases=1 Conn=Wye Model=1 kV=14.376 kW=60.0 kVAR=48.0
+
+New Load.S830a      Bus1=830.1 	Phases=1 Conn=Wye Model=1 kV=14.376 kW=10.0 kVAR=5.0
+New Load.S830b      Bus1=830.2 	Phases=1 Conn=Wye Model=1 kV=14.376 kW=10.0 kVAR=5.0
+New Load.S830c      Bus1=830.3 	Phases=1 Conn=Wye Model=1 kV=14.376 kW=25.0 kVAR=10.0

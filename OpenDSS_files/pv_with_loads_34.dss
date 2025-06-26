@@ -1,0 +1,15 @@
+New Generator.DG_S860a Bus1=860.1   Phases=1  kV=14.376  kW=60.0 kvar=0 model=1 Vmaxpu=2.0 Vminpu=0.1 
+New Generator.DG_S860b Bus1=860.2   Phases=1  kV=14.376  kW=60.0 kvar=0 model=1 Vmaxpu=2.0 Vminpu=0.1 
+New Generator.DG_S860c Bus1=860.3   Phases=1  kV=14.376  kW=60.0 kvar=0 model=1 Vmaxpu=2.0 Vminpu=0.1 
+New Generator.DG_S840a Bus1=840.1   Phases=1  kV=14.376  kW=27.0 kvar=0 model=1 Vmaxpu=2.0 Vminpu=0.1 
+New Generator.DG_S840b Bus1=840.2   Phases=1  kV=14.376  kW=27.0 kvar=0 model=1 Vmaxpu=2.0 Vminpu=0.1 
+New Generator.DG_S840c Bus1=840.3   Phases=1  kV=14.376  kW=27.0 kvar=0 model=1 Vmaxpu=2.0 Vminpu=0.1 
+New Generator.DG_S844a Bus1=844.1   Phases=1  kV=14.376  kW=405.0 kvar=0 model=1 Vmaxpu=2.0 Vminpu=0.1 
+New Generator.DG_S844b Bus1=844.2   Phases=1  kV=14.376  kW=405.0 kvar=0 model=1 Vmaxpu=2.0 Vminpu=0.1 
+New Generator.DG_S844c Bus1=844.3   Phases=1  kV=14.376  kW=405.0 kvar=0 model=1 Vmaxpu=2.0 Vminpu=0.1 
+New Generator.DG_S848a Bus1=848.1   Phases=1  kV=14.376  kW=60.0 kvar=0 model=1 Vmaxpu=2.0 Vminpu=0.1 
+New Generator.DG_S848b Bus1=848.2   Phases=1  kV=14.376  kW=60.0 kvar=0 model=1 Vmaxpu=2.0 Vminpu=0.1 
+New Generator.DG_S848c Bus1=848.3   Phases=1  kV=14.376  kW=60.0 kvar=0 model=1 Vmaxpu=2.0 Vminpu=0.1 
+New Generator.DG_S830a Bus1=830.1   Phases=1  kV=14.376  kW=10.0 kvar=0 model=1 Vmaxpu=2.0 Vminpu=0.1 
+New Generator.DG_S830b Bus1=830.2   Phases=1  kV=14.376  kW=10.0 kvar=0 model=1 Vmaxpu=2.0 Vminpu=0.1 
+New Generator.DG_S830c Bus1=830.3   Phases=1  kV=14.376  kW=25.0 kvar=0 model=1 Vmaxpu=2.0 Vminpu=0.1 
